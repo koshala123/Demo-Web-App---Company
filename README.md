@@ -1,5 +1,5 @@
 # Demo-Web-App---Company
-ASP.net , Razor Syntax , Entity framework , DbFirst Project
+ASP.net , Razor Syntax , Entity framework , DbFirst Project , Bootstrap date picker , Jquery for the edit page.
 
 1) Clone the project
 
