@@ -1,0 +1,113 @@
+﻿@model List<BuisnessLogic.DTO.CompanyTableDTO>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Id
+        </th>
+        <th>
+            Company Name
+        </th>
+        <th>
+            System Name
+        </th>
+        <th>
+            Issue Type
+        </th>
+        <th>
+            Class Name
+        </th>
+        <th>
+            Method Name
+        </th>
+        <th>
+            Date time
+        </th>
+        <th>
+            Request Number
+        </th>
+        <th>
+            Request Name
+        </th>
+        <th>
+            Status
+        </th>
+        <th>
+            Comment
+        </th>
+        <th>
+            Error
+        </th>
+        <th>
+            Active
+        </th>
+        <th>
+            Due Days
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CompanyName)
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SystemName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IssueType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MethodName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RequestName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Error)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Active)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DueDate)
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.id}) |
+                @Html.ActionLink("Details", "Details", new { id = item.id }) |
+                @Html.ActionLink("Delete", "Delete", new {id = item.id})
+            </td>
+        </tr>
+    }
+
+</table>

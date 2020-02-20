@@ -1,0 +1,137 @@
+﻿@model BuisnessLogic.DTO.CompanyTableDTO
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CompanyTabel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Id
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id)
+        </dd>
+
+        <dt>
+            Company Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+        <dt>
+            System Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SystemName)
+        </dd>
+
+        <dt>
+            Issue Type
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueType)
+        </dd>
+
+        <dt>
+            Class Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+
+        <dt>
+            Method Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MethodName)
+        </dd>
+
+        <dt>
+            Date Time
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTime)
+        </dd>
+
+        <dt>
+            Request Number
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestNumber)
+        </dd>
+
+        <dt>
+            Request Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestName)
+        </dd>
+
+        <dt>
+            Status
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            Comment
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+        <dt>
+            Error
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Error)
+        </dd>
+
+        <dt>
+            Active
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+
+        <dt>
+            Due Date
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DueDate)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

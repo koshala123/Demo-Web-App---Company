@@ -1,0 +1,131 @@
+﻿@model BuisnessLogic.DTO.CompanyTableDTO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CompanyTabel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Id
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id)
+        </dd>
+
+        <dt>
+            Company Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+
+        <dt>
+            System Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SystemName)
+        </dd>
+
+        <dt>
+            Issue Type
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueType)
+        </dd>
+
+        <dt>
+            Class Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassName)
+        </dd>
+
+        <dt>
+            Method Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MethodName)
+        </dd>
+
+        <dt>
+            Date Time
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTime)
+        </dd>
+
+        <dt>
+            Request Number
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestNumber)
+        </dd>
+
+        <dt>
+            Request Name
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestName)
+        </dd>
+
+        <dt>
+            Status
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            Comment
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Comment)
+        </dd>
+
+        <dt>
+            Error
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Error)
+        </dd>
+
+        <dt>
+            Active
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+
+        <dt>
+            Due Date
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DueDate)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
